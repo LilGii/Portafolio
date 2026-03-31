@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Portfolio — Angel Hernández</title>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+  <canvas id="starfield"></canvas>
+  <!-- ════ NEBULOSAS DE FONDO ═════════════════ -->
+  <div class="nebula nb1"></div>
+  <div class="nebula nb2"></div>
+  <div class="nebula nb3"></div>
+  <!-- ════ ESTRELLAS FUGACES ══════════════════ -->
+  <div class="shoot" style="width:200px;top:18%;left:70%;--dur:3.8s;--del:0s;--tx:-550px;--ty:280px;transform:rotate(30deg)"></div>
+  <div class="shoot" style="width:140px;top:35%;left:90%;--dur:5.2s;--del:-2s;--tx:-400px;--ty:180px;transform:rotate(25deg)"></div>
+  <div class="shoot" style="width:100px;top:8%;left:50%;--dur:4.5s;--del:-1.5s;--tx:-300px;--ty:150px;transform:rotate(28deg)"></div>
+  <div class="shoot" style="width:170px;top:55%;left:80%;--dur:6s;--del:-3s;--tx:-480px;--ty:220px;transform:rotate(22deg)"></div>
+  <!-- ════ CURSOR ═════════════════════════════ -->
+  <div id="cur"></div>
+  <div id="cur-ring"></div>
+  <nav>
+    <div class="nav-logo">
+      <div class="logo-orb">AH</div>
+      <span>Angel</span>Hernandez
+    </div>
+    <ul class="nav-links">
+      <li><a href="#inicio">Inicio</a></li>
+      <li><a href="#sobre">Sobre mí</a></li>
+      <li><a href="#proyectos">Proyectos</a></li>
+      <li><a href="#servicios">Servicios</a></li>
+      <li><a href="#contacto">Contacto</a></li>
+    </ul>
+    <a href="#contacto" class="nav-cta">Hablemos ✦</a>
+  </nav>
+
+  <section id="inicio">
+    <div class="planet pl-big"></div>
+    <div class="pl-ring"></div>
+    <div class="planet pl-sm ps1"></div>
+    <div class="planet pl-sm ps2"></div>
+    <div class="planet pl-sm ps3"></div>
+    <div class="hero-left reveal">
+      <div class="status-badge">
+        <div class="status-dot"></div>
+        Disponible para proyectos
+      </div>
+      <h1 class="hero-name">
+        Hola, soy<br/>
+        <span class="glow-word">Angel</span>
+      </h1>
+      <p class="hero-role">Dev Web · Diseñador · Python Dev</p>
+      <p class="hero-desc">
+        Creo experiencias digitales donde el código se encuentra con el diseño.
+        Interfaces modernas, desarrollo web y varios modulos en Python.
+      </p>
+      <div class="hero-btns">
+        <a href="#proyectos" class="btn btn-primary">Ver proyectos ✦</a>
+        <a href="#contacto"  class="btn btn-ghost">Hablemos</a>
+      </div>
+    </div>
+
+    <!-- ════════════════════════════════════════
+         FOTO HERO — LADO DERECHO
+         ──────────────────────────────────────
+         PARA PONER TU FOTO PNG:
+           1. Coloca tu archivo en esta carpeta.
+           2. En .photo-inner agrega el atributo:
+                style="background:url('foto.png') center/cover no-repeat;"
+           3. Elimina el div .photo-ph completo.
+    ════════════════════════════════════════ -->
+    <div class="hero-photo-wrap">
+      <div class="photo-glow-shadow"></div>
+      <div class="photo-blob-wrap">
+        <div class="photo-inner" style="background:url('https://maraekqjxzuamdlzwelo.supabase.co/storage/v1/object/sign/Proyectos/P1-ezgif.com-png-to-webp-converter.webp?token=eyJraWQiOiJzdG9yYWdlLXVybC1zaWduaW5nLWtleV9kOGEzZmNhNi1kYTFlLTRlNzktODY2NS00YWZjNTFlOTU0YTQiLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJQcm95ZWN0b3MvUDEtZXpnaWYuY29tLXBuZy10by13ZWJwLWNvbnZlcnRlci53ZWJwIiwiaWF0IjoxNzc0OTg4NzAzLCJleHAiOjE4MDY1MjQ3MDN9.4l54cS49YxihfUOB1v56gq5q161TeCV7QCmcG5H4F1E') center/cover no-repeat;">
+        </div>
+      </div>
+      <div class="photo-orb po1"></div>
+      <div class="photo-orb po2"></div>
+      <div class="photo-orb po3"></div>
+    </div>
+
+  </section>
+
+  <section id="sobre">
+    <div class="sec-chip"><div class="chip-dot"></div>Sobre mí</div>
+    <div class="gdiv"></div>
+    <h2>Quién soy<br/><em>& qué hago</em></h2>
+
+    <div class="sobre-grid">
+      <div class="sobre-photo-wrap reveal">
+        <div class="sobre-orb sbo1"></div>
+        <div class="sobre-orb sbo2"></div>
+        <div class="sobre-orb sbo3"></div>
+        <div class="sobre-photo-inner" style="background:url('https://maraekqjxzuamdlzwelo.supabase.co/storage/v1/object/sign/Proyectos/P1-ezgif.com-png-to-webp-converter.webp?token=eyJraWQiOiJzdG9yYWdlLXVybC1zaWduaW5nLWtleV9kOGEzZmNhNi1kYTFlLTRlNzktODY2NS00YWZjNTFlOTU0YTQiLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJQcm95ZWN0b3MvUDEtZXpnaWYuY29tLXBuZy10by13ZWJwLWNvbnZlcnRlci53ZWJwIiwiaWF0IjoxNzc0OTg4NzAzLCJleHAiOjE4MDY1MjQ3MDN9.4l54cS49YxihfUOB1v56gq5q161TeCV7QCmcG5H4F1E') center/cover no-repeat;">
+        </div>
+      </div>
+
+      <div class="reveal">
+        <!-- BIO -->
+        <p>Soy desarrollador y diseñador web con pasión por construir productos digitales que sean tan funcionales como visualmente memorables.</p>
+        <p>También trabajo con Python, he desarrollado algoritmos de IA, procesos de ETL y modelos de PLN</p>
+        <p> Siempre aprendiendo, siempre construyendo.</p>
+
+        <!-- STATS -->
+        <div class="stats-row">
+          <div class="stat-box"><strong>+3</strong><span>proyectos</span></div>
+          <div class="stat-box"><strong>+1</strong><span>años exp.</span></div>
+          <div class="stat-box"><strong>+10</strong><span>clientes</span></div>
+        </div>
+
+        <!-- SKILLS -->
+        <div class="skills-list">
+          <div class="skill-row">
+            <div class="skill-head">
+              <span class="sk-name">HTML / CSS</span>
+              <span class="sk-pct">85%</span>
+            </div>
+            <div class="sk-track"><div class="sk-fill" style="--pct:85%"></div></div>
+          </div>
+          <div class="skill-row">
+            <div class="skill-head">
+              <span class="sk-name">JavaScript</span>
+              <span class="sk-pct">75%</span>
+            </div>
+            <div class="sk-track"><div class="sk-fill" style="--pct:75%"></div></div>
+          </div>
+          <div class="skill-row">
+            <div class="skill-head">
+              <span class="sk-name">Python</span>
+              <span class="sk-pct">75%</span>
+            </div>
+            <div class="sk-track"><div class="sk-fill" style="--pct:75%"></div></div>
+          </div>
+          <div class="skill-row">
+            <div class="skill-head">
+              <span class="sk-name">UI / UX Design</span>
+              <span class="sk-pct">80%</span>
+            </div>
+            <div class="sk-track"><div class="sk-fill" style="--pct:80%"></div></div>
+          </div>
+          <div class="skill-row">
+            <div class="skill-head">
+              <span class="sk-name">SQL</span>
+              <span class="sk-pct">70%</span>
+            </div>
+            <div class="sk-track"><div class="sk-fill" style="--pct:70%"></div></div>
+          </div>
+          <div class="skill-row">
+            <div class="skill-head">
+              <span class="sk-name">Firebase</span>
+              <span class="sk-pct">80%</span>
+            </div>
+            <div class="sk-track"><div class="sk-fill" style="--pct:80%"></div></div>
+          </div>
+          <div class="skill-row">
+            <div class="skill-head">
+              <span class="sk-name">Manejo de la IA</span>
+              <span class="sk-pct">85%</span>
+            </div>
+            <div class="sk-track"><div class="sk-fill" style="--pct:85%"></div></div>
+          </div>
+          <div class="skill-row">
+            <div class="skill-head">
+              <span class="sk-name">Metodologías agiles</span>
+              <span class="sk-pct">80%</span>
+            </div>
+            <div class="sk-track"><div class="sk-fill" style="--pct:80%"></div></div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+  <section id="proyectos">
+    <div class="sec-chip"><div class="chip-dot"></div>Proyectos</div>
+    <div class="gdiv"></div>
+    <h2>Lo que he<br/><em>construido</em></h2>
+
+    <div class="projects-grid">
+
+      <div class="project-card reveal">
+        <div class="proj-img" style="background:url('https://maraekqjxzuamdlzwelo.supabase.co/storage/v1/object/sign/Proyectos/Tenis-ezgif.com-jpg-to-webp-converter.webp?token=eyJraWQiOiJzdG9yYWdlLXVybC1zaWduaW5nLWtleV9kOGEzZmNhNi1kYTFlLTRlNzktODY2NS00YWZjNTFlOTU0YTQiLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJQcm95ZWN0b3MvVGVuaXMtZXpnaWYuY29tLWpwZy10by13ZWJwLWNvbnZlcnRlci53ZWJwIiwiaWF0IjoxNzc0OTI4NDE0LCJleHAiOjE4MDY0NjQ0MTR9.w8Fb6X6pIFuBxsrgig43qGf1GWSoMA6WuFzYdpH_-c4') center/cover no-repeat;">
+          <span class="proj-tag">Landing Page</span>
+        </div>
+        <div class="proj-body">
+          <h3 class="proj-title">Landing Page</h3><!-- ← edita -->
+          <p class="proj-desc">Una landing page sobre la colaboración entre Travis Scott y Nike.</p>
+          <div class="proj-tech">
+            <span class="tech-pill">HTML</span>
+            <span class="tech-pill">CSS</span>
+            <span class="tech-pill">JavaScript</span>
+          </div>
+          <div class="proj-links">
+            <a href="https://page-sneakers202040200.vercel.app/" class="proj-btn demo">Demo ✦</a>
+            <a href="https://github.com/LilGii/Page_Sneakers" class="proj-btn code">Código</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- PROYECTO 2 ─────────────────────────── -->
+      <div class="project-card reveal">
+        <div class="proj-img" style="background:url('https://maraekqjxzuamdlzwelo.supabase.co/storage/v1/object/sign/Proyectos/Pizzas-ezgif.com-jpg-to-webp-converter.webp?token=eyJraWQiOiJzdG9yYWdlLXVybC1zaWduaW5nLWtleV9kOGEzZmNhNi1kYTFlLTRlNzktODY2NS00YWZjNTFlOTU0YTQiLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJQcm95ZWN0b3MvUGl6emFzLWV6Z2lmLmNvbS1qcGctdG8td2VicC1jb252ZXJ0ZXIud2VicCIsImlhdCI6MTc3NDk4ODc3OCwiZXhwIjoxODA2NTI0Nzc4fQ.lSVGterOCsN45rLol2YqGhPhl3lCZmHy3s9tKxDd6no') center/cover no-repeat;">
+          <span class="proj-tag">Web App</span>
+        </div>
+        <div class="proj-body">
+          <h3 class="proj-title">Sistema de control de gastos</h3>
+          <p class="proj-desc">Herramienta web que permite administrar los gastos de una pizzeria. Desde ingresos, salidas, y más</p>
+          <div class="proj-tech">
+            <span class="tech-pill">HTML</span>
+            <span class="tech-pill">CSS</span>
+            <span class="tech-pill">JavaScript</span>
+          </div>
+          <div class="proj-links">
+            <a href="https://pizzas-ruby.vercel.app/" class="proj-btn demo">Demo ✦ usuario prueba@prueba.com pwd: pruebas</a>
+            <a href="https://github.com/LilGii/Pizzas" class="proj-btn code">Código</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- PROYECTO 3 ─────────────────────────── -->
+      <div class="project-card reveal">
+        <div class="proj-img" style="background:url('https://maraekqjxzuamdlzwelo.supabase.co/storage/v1/object/sign/Proyectos/ABIPEC-ezgif.com-jpg-to-webp-converter.webp?token=eyJraWQiOiJzdG9yYWdlLXVybC1zaWduaW5nLWtleV9kOGEzZmNhNi1kYTFlLTRlNzktODY2NS00YWZjNTFlOTU0YTQiLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJQcm95ZWN0b3MvQUJJUEVDLWV6Z2lmLmNvbS1qcGctdG8td2VicC1jb252ZXJ0ZXIud2VicCIsImlhdCI6MTc3NDk4OTA3OCwiZXhwIjoxODA2NTI1MDc4fQ.wKtlrS4FXEfAqffa70D3Glj4BBls9LsUR8f55lJ7CtA') center/cover no-repeat;">
+          <span class="proj-tag">Landing Page</span>
+        </div>
+        <div class="proj-body">
+          <h3 class="proj-title">Landing Page de Servicios Pecuarios</h3>
+          <p class="proj-desc">Una landing page utilizada por ABIPEC, una persona dedicada a servicios pecuarios, utilizada para mostrar sus servios</p>
+          <div class="proj-tech">
+            <span class="tech-pill">HTML</span>
+            <span class="tech-pill">CSS</span>
+            <span class="tech-pill">JavaScript</span>
+          </div>
+          <div class="proj-links">
+            <a href="https://abipec.vercel.app/" class="proj-btn demo">Demo ✦</a>
+            <a href="https://github.com/LilGii/ABIPEC" class="proj-btn code">Código</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ════════════════════════════════════════════
+       SECCIÓN 03 — SERVICIOS
+       ─────────────────────────────────────────
+       Para agregar servicio: duplica .service-card.
+       Edita: emoji en .svc-icon-wrap, título, desc.
+  ════════════════════════════════════════════ -->
+  <section id="servicios">
+    <div class="sec-chip"><div class="chip-dot"></div>Servicios</div>
+    <div class="gdiv"></div>
+    <h2>Qué<br/><em>ofrezco</em></h2>
+
+    <div class="services-grid">
+
+      <div class="service-card reveal">
+        <div class="svc-icon-wrap">🌐</div>
+        <h3 class="svc-title">Desarrollo Web</h3>
+        <p class="svc-desc">Sitios y apps a medida. Desde landing pages hasta plataformas con HTML, CSS, JS y frameworks modernos.</p>
+      </div>
+
+      <div class="service-card reveal">
+        <div class="svc-icon-wrap">🎨</div>
+        <h3 class="svc-title">Diseño UI/UX</h3>
+        <p class="svc-desc">Interfaces intuitivas y atractivas. Wireframes, prototipos en Figma y sistemas de diseño.</p>
+      </div>
+
+      <div class="service-card reveal">
+        <div class="svc-icon-wrap">🐍</div>
+        <h3 class="svc-title">Desarrollo Python</h3>
+        <p class="svc-desc">Scripts que permiten ETL, analisis de datos, modelos de aprendizaje supervisado, no supervisados y aprendizaje profundo.</p>
+      </div>
+
+    </div>
+  </section>
+
+  <section id="contacto">
+    <div class="sec-chip"><div class="chip-dot"></div>Contacto</div>
+    <div class="gdiv"></div>
+    <h2>Hablemos de<br/><em>tu proyecto ✦</em></h2>
+
+    <div class="contact-grid">
+
+      <div class="reveal">
+        <p>¿Tienes una idea o proyecto? Me encanta colaborar desde cero. Escríbeme por cualquiera de estos canales y hablamos.</p>
+        <div class="social-links">
+
+          <a href="https://github.com/LilGii" target="_blank" class="social-item">
+            <div class="soc-icon si-github">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="white">
+                <path d="M12 2C6.477 2 2 6.477 2 12c0 4.418 2.865 8.166 6.839 9.489.5.092.682-.217.682-.482 0-.237-.009-.868-.013-1.703-2.782.604-3.369-1.341-3.369-1.341-.454-1.155-1.11-1.462-1.11-1.462-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.578 9.578 0 0112 6.836a9.59 9.59 0 012.504.337c1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.202 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.579.688.481C19.138 20.163 22 16.418 22 12c0-5.523-4.477-10-10-10z"/>
+              </svg>
+            </div>
+            <div class="soc-text">
+              <span class="soc-label">GitHub</span>
+              <span class="soc-value">github.com/LilGii</span><!-- ← edita -->
+            </div>
+          </a>
+
+          <a href="https://www.linkedin.com/in/angel-hernandez-francisco-a51994296/" target="_blank" class="social-item">
+            <div class="soc-icon si-linkedin">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="white">
+                <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+              </svg>
+            </div>
+            <div class="soc-text">
+              <span class="soc-label">LinkedIn</span>
+              <span class="soc-value">linkedin.com/in/angel-hernandez-francisco-a51994296</span>
+            </div>
+          </a>
+
+          <!-- WHATSAPP — edita href (wa.me/NUMERO) y .soc-value -->
+          <a href="https://wa.me/522228125279" target="_blank" class="social-item">
+            <div class="soc-icon si-whatsapp">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="white">
+                <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+              </svg>
+            </div>
+            <div class="soc-text">
+              <span class="soc-label">WhatsApp</span>
+              <span class="soc-value">+52 222 812 5279</span>
+            </div>
+          </a>
+
+          <!-- PINTEREST — edita href y .soc-value -->
+          <a href="https://pinterest.com/tu-usuario" target="_blank" class="social-item">
+            <div class="soc-icon si-pinterest">
+              <svg width="20" height="22" viewBox="0 0 24 24" fill="white">
+                <path d="M12 0C5.373 0 0 5.372 0 12c0 5.084 3.163 9.426 7.627 11.174-.105-.949-.2-2.405.042-3.441.218-.937 1.407-5.965 1.407-5.965s-.359-.719-.359-1.782c0-1.668.967-2.914 2.171-2.914 1.023 0 1.518.769 1.518 1.69 0 1.029-.655 2.568-.994 3.995-.283 1.194.599 2.169 1.777 2.169 2.133 0 3.772-2.249 3.772-5.495 0-2.873-2.064-4.882-5.012-4.882-3.414 0-5.418 2.561-5.418 5.207 0 1.031.397 2.138.893 2.738a.36.36 0 01.083.345l-.333 1.36c-.053.22-.174.267-.402.161-1.499-.698-2.436-2.889-2.436-4.649 0-3.785 2.75-7.262 7.929-7.262 4.163 0 7.398 2.967 7.398 6.931 0 4.136-2.607 7.464-6.227 7.464-1.216 0-2.359-.632-2.75-1.378l-.748 2.853c-.271 1.043-1.002 2.35-1.492 3.146C9.57 23.812 10.763 24 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0z"/>
+              </svg>
+            </div>
+            <div class="soc-text">
+              <span class="soc-label">Pinterest</span>
+              <span class="soc-value">pinterest.com/tu-usuario</span><!-- ← edita -->
+            </div>
+          </a>
+
+        </div>
+      </div>
+
+      <form class="contact-form reveal" action="#" method="POST">
+        <div class="fg">
+          <label class="fl" for="nombre">Nombre</label>
+          <input class="fi" type="text" id="nombre" name="nombre" placeholder="Tu nombre" required/>
+        </div>
+        <div class="fg">
+          <label class="fl" for="email">Email</label>
+          <input class="fi" type="email" id="email" name="email" placeholder="tu@email.com" required/>
+        </div>
+        <div class="fg">
+          <label class="fl" for="mensaje">Mensaje</label>
+          <textarea class="fta" id="mensaje" name="mensaje" placeholder="Cuéntame sobre tu proyecto..." required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary" style="border:none;cursor:none;">Enviar mensaje ✦</button>
+      </form>
+
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-brand">Angel</div>
+    <p class="footer-copy">© 2025 · Hecho con ✦ y mucho café</p>
+    <div class="footer-socials">
+      <a href="https://github.com/tu-usuario"      target="_blank" class="fsoc gh" title="GitHub">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="white"><path d="M12 2C6.477 2 2 6.477 2 12c0 4.418 2.865 8.166 6.839 9.489.5.092.682-.217.682-.482 0-.237-.009-.868-.013-1.703-2.782.604-3.369-1.341-3.369-1.341-.454-1.155-1.11-1.462-1.11-1.462-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.578 9.578 0 0112 6.836a9.59 9.59 0 012.504.337c1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.202 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.579.688.481C19.138 20.163 22 16.418 22 12c0-5.523-4.477-10-10-10z"/></svg>
+      </a>
+      <a href="https://linkedin.com/in/tu-usuario"  target="_blank" class="fsoc li" title="LinkedIn">
+        <svg width="17" height="17" viewBox="0 0 24 24" fill="white"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+      </a>
+      <a href="https://wa.me/521234567890"           target="_blank" class="fsoc wa" title="WhatsApp">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+      </a>
+      <a href="https://pinterest.com/tu-usuario"     target="_blank" class="fsoc pi" title="Pinterest">
+        <svg width="17" height="18" viewBox="0 0 24 24" fill="white"><path d="M12 0C5.373 0 0 5.372 0 12c0 5.084 3.163 9.426 7.627 11.174-.105-.949-.2-2.405.042-3.441.218-.937 1.407-5.965 1.407-5.965s-.359-.719-.359-1.782c0-1.668.967-2.914 2.171-2.914 1.023 0 1.518.769 1.518 1.69 0 1.029-.655 2.568-.994 3.995-.283 1.194.599 2.169 1.777 2.169 2.133 0 3.772-2.249 3.772-5.495 0-2.873-2.064-4.882-5.012-4.882-3.414 0-5.418 2.561-5.418 5.207 0 1.031.397 2.138.893 2.738a.36.36 0 01.083.345l-.333 1.36c-.053.22-.174.267-.402.161-1.499-.698-2.436-2.889-2.436-4.649 0-3.785 2.75-7.262 7.929-7.262 4.163 0 7.398 2.967 7.398 6.931 0 4.136-2.607 7.464-6.227 7.464-1.216 0-2.359-.632-2.75-1.378l-.748 2.853c-.271 1.043-1.002 2.35-1.492 3.146C9.57 23.812 10.763 24 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0z"/></svg>
+      </a>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+
+</body>
+</html>
